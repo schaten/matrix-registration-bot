@@ -7,7 +7,7 @@ class Config(dict):
     """A class to manage the bot's configuration"""
 
     keys = ["BOT_SERVER", "BOT_USERNAME", "BOT_PASSWORD", "BOT_ACCESS_TOKEN",
-            "API_BASE_URL", "API_TOKEN",
+            "API_BASE_URL", "API_TOKEN", "API_ENDPOINT",
             "LOGGING_LEVEL"]
 
     def __init__(self, config_path=None):

@@ -39,7 +39,7 @@ except KeyError:
 bot_prefix = config['bot']['prefix']
 
 api_base_url = config['api']['base_url']
-api_endpoint = '/_synapse/admin/v1/registration_tokens'
+api_endpoint = config['api']['endpoint'] if 'endpoint' in config['api'] else '/_synapse/admin/v1/registration_tokens'
 api_token = config['api']['token']
 
 # Load a config file that configures bot behaviour
